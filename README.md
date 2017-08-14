@@ -4,7 +4,7 @@ Simple multi-select component with order - you can not only manage a set of item
 
 No sass/less compilation. Very easy to use :).
 
-<img src="https://raw.githubusercontent.com/AlexLibs/vue-libs-multi-select-with-order/master/demo/vue-libs-multi-select-with-order" /><br>
+<img src="https://raw.githubusercontent.com/AlexLibs/vue-libs-multi-select-with-order/master/demo/vue-libs-multi-select-with-order.png" /><br>
 
 ## Installation
 Add the dependencies to your html file:
