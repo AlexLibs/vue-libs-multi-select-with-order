@@ -1,4 +1,4 @@
-# Vue Simple Toggle (Switch)
+# Vue Simple Multi-Select With Order
 
 Simple multi-select component with order - you can not only manage a set of items (like a regular multi-select) but also their order.
 
