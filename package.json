@@ -1,6 +1,6 @@
 {
   "name": "vue-libs-multi-select-with-order",
-  "version": "1.0.1",
+  "version": "1.0.2",
   "description": "Simple multi-select component with order - you can not only manage a set (like a regular multi-select) but also the order of its elements",
   "main": "vue_libs_multi_select_with_order.vue",
   "scripts": {
