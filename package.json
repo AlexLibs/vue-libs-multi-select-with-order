@@ -1,0 +1,34 @@
+{
+  "name": "vue-libs-multi-select-with-order",
+  "version": "1.0.0",
+  "description": "Simple multi-select component with order - you can not only manage a set (like a regular multi-select) but also the order of its elements",
+  "main": "vue_libs_multi_select_with_order.vue",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/AlexLibs/vue-libs-multi-select-with-order.git"
+  },
+  "keywords": [
+    "vue",
+    "multi-select",
+    "select2",
+    "draggable multi-select",
+    "drag",
+    "draggable",
+    "draggable select2",
+    "draggable list",
+    "order",
+    "ordered",
+    "ordered select2",
+    "ordered list",
+    "vue.js"
+  ],
+  "author": "Alexander Libster",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/AlexLibs/vue-libs-multi-select-with-order/issues"
+  },
+  "homepage": "https://github.com/AlexLibs/vue-libs-multi-select-with-order#readme"
+}
