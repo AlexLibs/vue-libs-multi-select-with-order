@@ -62,18 +62,26 @@
             }
             initItemsContainer();
 
-            selectEl
-                .select2()
-                .on('change', function (evt) {
-                    const newValue = selectEl.select2('val');
-                    if (!newValue) {
-                        return;
-                    }
-                    self.selectValue.push();
-                    self.$emit('input', self.selectValue);
-                    selectEl.val('').trigger('change');
-                    self.hiddenList = true;
-                });
+            function createSelect2Element() {
+                selectEl
+                    .select2()
+                    .on('change', function (evt) {
+                        const newValue = selectEl.select2('val');
+                        if (!newValue) {
+                            return;
+                        }
+                        self.selectValue.push(newValue);
+                        self.$emit('input', self.selectValue);
+                        selectEl.val('').trigger('change');
+                        self.hiddenList = true;
+                        setTimeout(function() {
+                            selectEl.select2('destroy');
+                            setTimeout(createSelect2Element, 0)
+                        }, 0)
+                    });
+            }
+            createSelect2Element();
+
             $(this.$el).children('.add-button')
                 .click(function () {
                     self.hiddenList = false;
