@@ -65,9 +65,13 @@
             selectEl
                 .select2()
                 .on('change', function (evt) {
-                    self.selectValue.push(selectEl.select2('val'));
+                    const newValue = selectEl.select2('val');
+                    if (!newValue) {
+                        return;
+                    }
+                    self.selectValue.push();
                     self.$emit('input', self.selectValue);
-                    selectEl.select2('val', '');
+                    selectEl.val('').trigger('change');
                     self.hiddenList = true;
                 });
             $(this.$el).children('.add-button')
@@ -109,9 +113,6 @@
         border: 1px solid #dbdbdb;
         border-radius: 4px;
         padding: 10px;
-    }
-    .multi-select-with-order .select2-selection__rendered {
-        display: none;
     }
     .multi-select-with-order .add-button {
         font-size: 28px;
