@@ -104,12 +104,14 @@
 </script>
 
 <style>
-    @import url('//cdnjs.cloudflare.com/ajax/libs/select2/3.4.8/select2.css');
-    @import url('//cdnjs.cloudflare.com/ajax/libs/select2/3.4.8/select2-bootstrap.css');
+    @import url('//cdnjs.cloudflare.com/ajax/libs/select2/4.0.3/css/select2.min.css');
     .multi-select-with-order {
         border: 1px solid #dbdbdb;
         border-radius: 4px;
         padding: 10px;
+    }
+    .multi-select-with-order .select2-selection__rendered {
+        display: none;
     }
     .multi-select-with-order .add-button {
         font-size: 28px;
