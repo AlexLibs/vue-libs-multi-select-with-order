@@ -72,7 +72,7 @@
                         }
                         self.selectValue.push(newValue);
                         self.$emit('input', self.selectValue);
-                        selectEl.val('').trigger('change');
+                        selectEl.val(null).trigger('change');
                         self.hiddenList = true;
                         setTimeout(function() {
                             selectEl.select2('destroy');
