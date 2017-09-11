@@ -67,7 +67,7 @@
                     .select2()
                     .on('change', function (evt) {
                         const newValue = selectEl.select2('val');
-                        if (newValue === null) {
+                        if (!newValue) {
                             return;
                         }
                         self.selectValue.push(newValue);
