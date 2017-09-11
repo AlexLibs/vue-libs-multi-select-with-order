@@ -87,7 +87,7 @@
                     self.hiddenList = false;
                     setTimeout(function() {
                         selectEl.select2('open');
-                        $('.select2-input').on( "blur", function() {
+                        selectEl.on('select2:close', function() {
                             self.hiddenList = true;
                         });
                     }, 0);
